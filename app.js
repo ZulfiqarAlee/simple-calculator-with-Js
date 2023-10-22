@@ -3,7 +3,7 @@ function btnData(e){
     let oldvalue = textInput.value;
     let lengthOfOldvalue = oldvalue.length;
     let lastChr= oldvalue[lengthOfOldvalue-1]
-    let oprSymble=["=","-","/","*","."]
+    let oprSymble=["=","-","/","*",".","+"]// Operator Symble for 
     if(oprSymble.includes(e)){
         if(oprSymble.includes(lastChr)){
             let removeLast = oldvalue.slice(0, -1)
